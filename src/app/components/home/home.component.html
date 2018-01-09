@@ -1,10 +1,9 @@
 <li class="l-section section section--is-active">
-  <div class="home inner-section">
-    <h1>Angular Application Developer</h1>
-    <h3>CHENNAI CITY</h3>
-    <p>We are building the most effective animated website for you,<br/>
-    From backend development to front end design and usability with <br/> responsive website for desktop and mobile devices.</p>
-    <p><a href="tel:+919043512898" class="contact-num" title="Call Me">+919043512898</a> &nbsp;<a href="tel:+918807388141" class="contact-num" title="Call Me">+918807388141</a></p>
-    <p><a id="cta" class="cta" routerLink="contact" title="Pick Me">Pick Me</a></p>
-  </div>
-</li>
+    <div class="home inner-section">
+      <h1>{{homedata.title}}</h1>
+      <h3>{{homedata.subtitle}}</h3>
+      <p>{{homedata.content}}</p>
+      <p><a href="tel:{{homedata.number}}" class="contact-num" title="Call Me">{{homedata.number}}</a> &nbsp;<a href="tel:{{homedata.altnumber}}" class="contact-num" title="Call Me">{{homedata.altnumber}}</a></p>
+      <p><a id="cta" class="cta" routerLink="contact" title="Pick Me">Pick Me</a></p>
+    </div>
+  </li>

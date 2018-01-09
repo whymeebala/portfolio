@@ -9,6 +9,14 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   constructor() { }
+  homedata:array = 
+    {
+        title:'Angular Application Developer',
+        subtitle:'CHENNAI CITY',
+        content:'We are building the most effective animated website for you, From backend development to front end design and usability with responsive website for desktop and mobile devices.',
+        number:'+919043512898',
+        altnumber:'+918807388141',
+    };
 
   ngOnInit() {
   }

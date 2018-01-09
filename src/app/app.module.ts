@@ -12,6 +12,8 @@ import { ServiceComponent } from './components/service/service.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ContactComponent } from './components/contact/contact.component';
 
+import { AlljsondataService } from './services/alljsondata.service';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ContactComponent } from './components/contact/contact.component';
     BrowserAnimationsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    AlljsondataService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
