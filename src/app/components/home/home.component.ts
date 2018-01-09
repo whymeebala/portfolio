@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   constructor() { }
-  homedata:array = 
+  homedata:any = 
     {
         title:'Angular Application Developer',
         subtitle:'CHENNAI CITY',

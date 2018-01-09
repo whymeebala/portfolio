@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ServiceComponent implements OnInit {
 
   constructor() { }
-  serviceData:array =     {
+  serviceData:any =     {
       "servicedata": [
         {
           "subtitle":"Website",
