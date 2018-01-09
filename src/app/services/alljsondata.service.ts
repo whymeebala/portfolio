@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 export class AlljsondataService {
 
   constructor() { }
-  allJsonData:array =     {
+  allJsonData:any =     {
       "homedata": [ 
         {
           "title" : "Angular Application Developer",
