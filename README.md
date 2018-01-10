@@ -1,4 +1,8 @@
-# Portfolio
+# Portfolio 
+
+To View about me Navigate to `http://www.whymee.in`.
+
+To View about this project Navigate to `http://demo.whymee.in/portfolio-angular/`.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.5.
 
