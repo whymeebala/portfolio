@@ -4,14 +4,11 @@
        <img src="assets/img/solution-img.png" alt="solution-img">
     </div>
     <div class="services-right">
-     <h2>Our Services</h2>
+     <h2>{{serviceData[0].servicetitle}}</h2>
       <ul>
-        <li *ngFor=""><span>{{data.subtitle}}</span>{{data.content}}</li>
-        <li><span>Technologies</span>HTML5 & CSS3, Sass, Javascript, and Jquery</li>
-        <li><span>Framework</span>Wordpress, Bootstrap</li>
-        <li><span>AngularJS</span>Get your single application for both Desktop and Mobile</li>
+        <li *ngFor="let servicedata of serviceData"><span>{{servicedata.subtitle}}</span>{{servicedata.content}}</li>
       </ul>
     </div>
-    <div class="services-bottom">We are always ready to make a effective animated website for you</div>
+    <div class="services-bottom">{{serviceData[0].servicecontent}}</div>
   </div>
 </li>

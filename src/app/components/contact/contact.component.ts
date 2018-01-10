@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlljsondataService } from '../../services/alljsondata.service';
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(private alljsondataservice:AlljsondataService) { }
+
+  contactData = this.alljsondataservice.allJsonData.contactdata[0];
+  contactAddress = this.alljsondataservice.allJsonData.contactdata[0].address;
+  socialLink = this.alljsondataservice.allJsonData.contactdata[0].sociallinks;
 
   ngOnInit() {
+    console.log(this.socialLink)
   }
 
 }

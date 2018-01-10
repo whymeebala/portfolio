@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlljsondataService } from '../../services/alljsondata.service';
 
 @Component({
   selector: 'app-service',
@@ -6,31 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./service.component.scss']
 })
 export class ServiceComponent implements OnInit {
-
-  constructor() { }
-  serviceData:any =     {
-      "servicedata": [
-        {
-          "subtitle":"Website",
-          "content":"Make your business with effective and optimized website",
-        },
-        {
-          "subtitle":"Technologies",
-          "content":"HTML5 & CSS3, Sass, Javascript, and Jquery",
-        },
-        {
-          "subtitle":"Framework",
-          "content":"Wordpress, Bootstrap",
-        },
-        {
-          "subtitle":"AngularJS",
-          "content":"Get your single application for both Desktop and Mobile",
-        }
-      ],
-
-  }
-  ngOnInit() {
-    console.log(this.serviceData);
-  }
+  constructor(private alljsondataservice:AlljsondataService) { }
+  serviceData = this.alljsondataservice.allJsonData.servicedata;
+  ngOnInit() {  }
 
 }

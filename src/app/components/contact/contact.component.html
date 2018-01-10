@@ -2,15 +2,15 @@
   <div class="contact inner-section">
     <div class="contact-section">
       <div class="contact-left">
-      <p><span></span>Call: <a href="tel:+919043512898">+919043512898</a></p>
-      <p><span></span>Call: <a href="tel:+919043512898">+919043512898</a></p>
-      <p><span></span>Email: <a href="mailto:whymeebala@gmail.com">whymeebala@gmail.com</a></p>
-      <p><span></span>#71/29,<br/> Sivasubramaniayasami koil street,<br/>Saidapet,<br/>Chennai - 15</p>
+      <p><span></span>Call: <a href="tel:{{contactData.number1}}">{{contactData.number1}}</a></p>
+      <p><span></span>Call: <a href="tel:{{contactData.number2}}">{{contactData.number1}}</a></p>
+      <p><span></span>Email: <a href="mailto:{{contactData.email}}">{{contactData.email}}</a></p>
+      <p><span></span>{{contactAddress.doorno}}<br/> {{contactAddress.street}}<br/>{{contactAddress.area}}<br/>{{contactAddress.city}}</p>
       <ul class="social-links">
-        <li class="facebook-icon"><a href="#" title="Facebook">Facebook</a></li>
-        <li class="twitter-icon"><a href="#" title="Twitter">Twitter</a></li>
-        <li class="google-icon"><a href="#" title="Google+">Google+</a></li>
-        <li class="skype-icon"><a href="#" title="Skype">Skype</a></li>
+        <li class="facebook-icon"><a href="{{socialLink.facebook}}" title="Facebook" target="_blank">Facebook</a></li>
+        <li class="twitter-icon"><a href="{{socialLink.twitter}}" title="Twitter" target="_blank">Twitter</a></li>
+        <li class="google-icon"><a href="{{socialLink.google}}" title="Google+" target="_blank">Google+</a></li>
+        <li class="skype-icon"><a href="#" title="Skype" target="_blank">Skype</a></li>
       </ul>
       </div>  
       <div class="contact-right">
