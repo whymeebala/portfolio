@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit {
   homeData = this.alljsondataservice.allJsonData.homedata[0];
 
   ngOnInit() {
+    this.alljsondataservice.allJsonData1();
 
   }
 

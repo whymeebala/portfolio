@@ -16,7 +16,6 @@ export class ContactComponent implements OnInit {
   socialLink = this.alljsondataservice.allJsonData.contactdata[0].sociallinks;
 
   ngOnInit() {
-    console.log(this.socialLink)
   }
 
 }
