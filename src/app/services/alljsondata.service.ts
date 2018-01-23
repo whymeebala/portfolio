@@ -10,7 +10,7 @@ export class AlljsondataService {
     return this.http.get('https://raw.githubusercontent.com/whymeebala/jsondata/master/db.json').map(
       (response) => response.json()
     ).subscribe(
-      (data) =>  console.log(data)      
+      (data) =>  console.log(data)
     )
   }
 

@@ -14,21 +14,69 @@
       </ul>
       </div>  
       <div class="contact-right">
-      <form>
+      <form #frm="ngForm" (ngSubmit)="cntData(frm)">
         <div class="form-row">
-          <input type="text" placeholder="Name">
+          <input 
+            type="text" 
+            placeholder="Name"
+            name="name"
+            ngModel
+            #contactName="ngModel"
+            required
+            pattern="[a-zA-Z][a-zA-Z]+"
+          >
+          <div class="error" *ngIf="contactName.touched">
+            <div *ngIf="contactName.errors?.required">Name is required</div>
+            <div *ngIf="contactName.errors?.pattern">Invalid Name</div>
+          </div>
         </div>
         <div class="form-row">
-          <input type="tel" placeholder="Mobile Number">
+          <input 
+            type="tel" 
+            placeholder="Mobile Number"
+            name="mobilenumber"
+            ngModel
+            #contactMobilenumber="ngModel"
+            required
+            pattern="[0-9]*"
+            maxlength="10"
+          >
+          <div class="error" *ngIf="contactMobilenumber.touched">
+            <div *ngIf="contactMobilenumber.errors?.required">Mobile Number is required</div>
+            <div *ngIf="contactMobilenumber.errors?.pattern">Invalid Mobile Number</div>
+          </div>
         </div>
         <div class="form-row">
-          <input type="email" placeholder="Email">
+          <input 
+            type="email" 
+            placeholder="Email"
+            name="email"
+            ngModel
+            #contactEmail="ngModel"
+            required
+            pattern="^\w+@\w+\..{2,3}(.{2,3})?$"
+          >
+          <div class="error" *ngIf="contactEmail.touched">
+              <div *ngIf="contactEmail.errors?.required">Email is required</div>
+              <div *ngIf="contactEmail.errors?.pattern">Invalid Email</div>
+            </div>
         </div>
         <div class="form-row">
-          <textarea placeholder="Message"></textarea>
+          <textarea 
+            placeholder="Message"
+            name="message"
+            ngModel
+            #contactMessage="ngModel"
+            required
+            minlength="20"
+          ></textarea>
+          <div class="error" *ngIf="contactMessage.touched">
+              <div *ngIf="contactMessage.errors?.required">Message is required</div>
+              <div *ngIf="contactMessage.errors?.minlength">Enter minimum 20 charactors</div>
+          </div>
         </div>
         <div class="form-row submit-form">
-          <input type="submit" value="Send">
+          <input type="submit" value="Send" [disabled]="frm.invalid">
         </div>
       </form>
       </div> 				

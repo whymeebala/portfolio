@@ -11,10 +11,10 @@ export class HomeComponent implements OnInit {
   constructor(private alljsondataservice:AlljsondataService) { }
 
   homeData = this.alljsondataservice.allJsonData.homedata[0];
-
+  homeData1 = this.alljsondataservice.allJsonData1();
   ngOnInit() {
-    this.alljsondataservice.allJsonData1();
-
+    this.homeData1;
+    console.log(this.homeData1);
   }
 
 }
