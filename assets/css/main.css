@@ -907,7 +907,8 @@ body {
 	border-left: 2px solid rgba(204, 204, 204, 0.69);
 }
 .contact-right .form-row{
-	margin-bottom:20px;
+    margin-bottom:25px;
+    position: relative;
 }
 .contact-right input,
 .contact-right textarea{
@@ -933,6 +934,16 @@ body {
 }
 .contact-right .form-row.submit-form{
 	margin:0;
+}
+.contact-right .form-row .error{
+    font-size: 12px;
+    color: #f95b5b;
+    position: absolute;
+}
+.contact-right input[disabled],
+.contact-right input[disabled]:hover{
+    opacity: 0.2;
+    border-color:inherit;
 }
 .social-links{
 	padding:0;
@@ -1003,6 +1014,8 @@ body {
 .inner-page .portfolio ul{
 	padding:0;
 }
+
+
 
 /*Responsive*/
 @media only screen and (max-width: 767px) {
