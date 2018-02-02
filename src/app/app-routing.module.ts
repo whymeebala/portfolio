@@ -6,6 +6,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ServiceComponent } from './components/service/service.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 const routes: Routes = [
 
@@ -15,25 +16,11 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path:'about',
-    component:AboutComponent,
+    path:'dashboard',
+    component:DashboardComponent,
     pathMatch: 'full'
   },
-  {
-    path:'service',
-    component:ServiceComponent,
-    pathMatch: 'full'
-  },
-  {
-    path:'portfolio',
-    component:PortfolioComponent,
-    pathMatch: 'full'
-  },
-  {
-    path:'contact',
-    component:ContactComponent,
-    pathMatch: 'full'
-  }
+  
 ];
 
 @NgModule({

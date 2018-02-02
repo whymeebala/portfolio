@@ -16,15 +16,18 @@ export class ContactComponent implements OnInit {
   socialLink = this.alljsondataservice.allJsonData.contactdata[0].sociallinks;
 
   contactList: ContactUsers[] = [];
-
-  cntData(cdata){
+  
+  cntData(cdata){ 
     var clist : ContactUsers;
     clist = cdata.value;
     this.contactList.push(clist);
     console.log(this.contactList);
+
   }
 
   ngOnInit() {
+
   }
+
 
 }

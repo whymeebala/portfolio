@@ -15,6 +15,7 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ContactComponent } from './components/contact/contact.component';
 
 import { AlljsondataService } from './services/alljsondata.service';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { AlljsondataService } from './services/alljsondata.service';
     AboutComponent,
     ServiceComponent,
     PortfolioComponent,
-    ContactComponent
+    ContactComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
