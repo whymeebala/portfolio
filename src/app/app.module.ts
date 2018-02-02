@@ -26,8 +26,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     AboutComponent,
     ServiceComponent,
     PortfolioComponent,
-    ContactComponent,
-    DashboardComponent
+    DashboardComponent,
+    ContactComponent    
   ],
   imports: [
     BrowserModule,
