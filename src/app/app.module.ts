@@ -13,9 +13,10 @@ import { AboutComponent } from './components/about/about.component';
 import { ServiceComponent } from './components/service/service.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 import { AlljsondataService } from './services/alljsondata.service';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
+
 
 
 @NgModule({
@@ -26,8 +27,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     AboutComponent,
     ServiceComponent,
     PortfolioComponent,
-    DashboardComponent,
-    ContactComponent    
+    ContactComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
